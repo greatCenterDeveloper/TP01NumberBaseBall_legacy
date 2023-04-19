@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="숫자로 하는 야구 게임"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/su100"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ball"
+            android:layout_marginRight="30dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="70sp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/su10"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ball"
+            android:layout_marginRight="30dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="70sp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/su1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ball"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="70sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="확인"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"/>
+    </ScrollView>
+</LinearLayout>
